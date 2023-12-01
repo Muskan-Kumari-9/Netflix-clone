@@ -1,0 +1,423 @@
+:root {
+  --red: #e50914;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.landing_page {
+  height: 70vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(images_videos/landingpage_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+section {
+  border-bottom: 8px solid rgb(39, 39, 39);
+}
+/* ======navigation====== */
+#logo {
+  width: 100px;
+}
+nav {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.language{
+  display: inline;
+  border: 1px solid grey;
+  padding: 6px 10px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+select {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: 700;
+}
+.navtext a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: 400;
+  background-color: var(--red);
+  cursor: pointer;
+}
+.signin:hover{
+  background-color: #b30a13;
+}
+.white {
+  color: #fff;
+}
+.lpagetext {
+  text-align: center;
+  margin: 100px 60px 0;
+}
+.lpagetext h6 {
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.lpagetext h1 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.loginbox{
+  margin-top: 5%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.loginbox p{
+  font-size: 18px;
+}
+.data{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.data input{
+  padding: 18px 180px;
+  padding-left: 20px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgba(154, 208, 250, 0.181);
+  color: white; 
+  outline: 0.5px solid rgb(68, 236, 68);
+}
+::placeholder{
+  color:#ffffffd3;
+}
+.signbutton {
+  border: none;
+  outline: none;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: var(--red);
+  padding: 13px 20px;
+  cursor: pointer;
+
+  }
+  .signbutton:hover{
+    background-color: #b30a13;
+  }
+/* =============shows-section========== */
+.boxes {
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  padding: 50px 30px;
+}
+.boxheading {
+  flex-basis: 100%;
+  width: 100%;
+  text-align: center;
+  /* display: block; */
+  align-items: center;
+}
+.boxheading h1 {
+  align-items: center;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.boxheading h4 {
+  align-items: center;
+  font-size: 17px;
+  font-weight: 200;
+  line-height: 1.3;
+}
+.boxmedia {
+  position: relative;
+  flex-basis: 100%;
+  /* display: block; */
+  width: 100%;
+}
+.pdr {
+  padding-right: 5px;
+}
+.pdl {
+  padding-left: 5px;
+}
+.boxmedia img {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+video {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 100%;
+  left: 10%;
+}
+.box3 .boxmedia video {
+  top: -20%;
+  left: 20%;
+  width: 60%;
+}
+.strange {
+  z-index: 2;
+  position: absolute;
+  top: 65%;
+  left: 23%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  padding: 1% 5% ;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+.strange img {
+  width: 15%;
+  padding-right: 10px;
+}
+.strange .text {
+  text-align: left;
+  font-size: 2vw;
+  padding-right: 30px;
+}
+.strange .text > :nth-child(2) {
+  color: rgb(0, 76, 255);
+}
+.strange> :last-child{
+  position: absolute;
+  right: 10px;
+}
+.displaybottom{
+  display: none;
+}
+/* ===========Questions======== */
+.faq {
+  background-color: black;
+  align-items: center;
+  padding-top: 60px;
+}
+.faqh{
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.qnabox {
+  padding: 30px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+.qna {
+  background-color: rgb(43, 42, 42);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+.qna p {
+  font-size: 20px;
+}
+.qna i {
+  font-size: 30px;
+}
+footer {
+  background-color: #000;
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 30px;
+}
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+footer ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+footer a,
+p {
+  color: #a8a7a7;
+}
+.col{
+  flex-basis: 50%;
+}
+option{
+  background-color: #000;
+}
+.bmf{
+  margin-top: 25px;
+}
+/* =======Responsiveness======= */
+@media (max-width:600px){
+  .landing_page{
+    height: 400px;
+  }
+  #logo {
+    width: 80px;
+  }
+  .hidden{
+    display: none;
+  }
+  nav{
+    padding: 20px;
+  }
+  .language{
+    display: inline;
+    border: 1px solid grey;
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin-right: 5px;
+  }
+  .navtext a {
+    padding: 5px 7px;
+    font-size: 13px;
+  }
+  .lpagetext {
+    margin:30px;
+  }
+  .data{
+    flex-direction: column;
+  }
+  .lpagetext h1 {
+    font-size: 25px;
+  }
+  .lpagetext h6 {
+    font-size: 15px;
+  }
+  .loginbox p{
+    font-size: 15px;
+  }
+  .data input{
+    padding: 12px 100px;
+    padding-left: 20px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(154, 208, 250, 0.181);
+    color: white; 
+    outline: 1px solid green;
+  }  
+  .strange{
+    padding: 2% 5%;
+    left: 5%;
+  }
+  .strange .text{
+    font-size: 15px;
+    padding-right: 20px;
+  }
+}
+@media(min-width:960px){
+  .landing_page{
+    height: 95vh;
+  }
+  nav{
+    padding: 25px 150px;
+  }
+  #logo{
+    width: 150px;
+  }
+  .navtext a {
+    padding: 7px 15px;
+    font-weight: 700;
+    margin-left: 15px;
+  }
+  .lpagetext{
+    margin-top: 200px;
+  }
+  .lpagetext h1 {
+    font-size: 43px;
+    font-weight: 900;
+  }
+  .lpagetext h6 {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .loginbox{
+    margin-top:2%;
+  }
+  .loginbox p{
+    font-size: 20px;
+  }
+  .boxes {
+    flex-direction: row;
+  }
+  .boxheading {
+    flex-basis: 50%;
+    width: 100%;
+    text-align: left;
+  }
+  .boxheading h1 {
+    font-size: 43px;
+  }
+  .boxheading h4 {
+    font-size: 22px;
+  }
+  .boxmedia {
+    flex-basis: 50%;
+  }
+  .strange{
+    padding: 2%;
+    left: 22%;
+  }
+  .strange img {
+    width: 25%;
+  }
+  .strange .text {
+    text-align: left;
+    font-size: 1vw;
+    padding-right: 15px;
+  }
+  .displaybottom{
+    display: inline;
+  }
+  .displayupper{
+    display: none;
+  }
+  .faqh{
+    font-size: 43px;
+  }
+  .qna p {
+    color: #fff;
+    font-size: 22px;
+  }
+  .qna i {
+    font-size: 30px;
+  }
+  .col{
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+  }
+  .column{
+    width: 100%;
+    flex-basis: 25%;
+  }
+}
+@media (min-width:1280px){
+  .qnabox {
+    padding:0 200px;
+    padding-top: 20px;
+  }
+  .boxes {
+    padding: 50px 200px;
+  }
+}
